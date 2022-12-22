@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>WebSockets</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>WebSockets</title>
+	</head>
+	<body style="cursor: crosshair">
+		<ul id="chats"></ul>
 
-    <ul id="chats"></ul>
+		<input type="text" name="message" id="chatbox" />
+		<button id="send-button">Send</button>
 
-    <input type="text" name="message" id="chatbox">
-    <button id='send-button'>Send</button>
-    
-    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-</body>
+		<div id="field">
+			<div id="user1" class="objects"></div>
+			<div id="user2" class="objects"></div>
+		</div>
+
+		<script
+			src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+			integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+			crossorigin="anonymous"
+		></script>
+		<script src="./main.js"></script>
+	</body>
 </html>
